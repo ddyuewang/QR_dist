@@ -3,6 +3,8 @@ Q/KDB+ Quant Analytic Library
 
 This is an open distributed library specialised in Quant Analytic written in Q/KDB+. It offers an single .so file for easy loading.
 
+Most of the functions offered by this library was inspired by real life example through my career working in the language of Q. It intended to cover most of the common challenges from practitioners.
+
 95% of the codes are written in Q/KDB+ except few are calling QML (LAPACK) for fast linear algebra computation.
 
 This projects uses the following open source libraries. My sincere thanks for their genius invention otherwise this could not be possible. </br>
