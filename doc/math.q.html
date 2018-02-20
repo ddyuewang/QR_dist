@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" ><head><meta http-equiv="content-type" content="text/html; charset=iso-8859-1" /><title>math.q - TimeStored.com</title><link rel="stylesheet" href="qdoc.css" type="text/css" media="screen" /><link rel="shortcut icon" type="image/png" href="http://www.timestored.com/favicon.png" /></head><body>
+<div id='wrap'><div id='page'>
+<div id='header'><h2><a class='qlogo' href='http://www.timestored.com/qstudio/help/qdoc?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio' target='a'>q<span>Doc</span></a> - <a target='a' href='http://www.timestored.com'>TimeStored.com</a></h2></div>
+<div id='main'>
+	<div id='headerDoc'>math.q - contains math function</div>
+	<div id='summary'><h2>Entity Summary</h2><table class='overviewSummary'><tbody><tr><th>Entities</th><th>Short Description</th></tr>
+		<tr><td><a href='#-qr-quant-math-beta'>.qr.quant.math.beta</a></td><td>return the beta function</td></tr>
+		<tr><td><a href='#-qr-quant-math-betaIncomp'>.qr.quant.math.betaIncomp</a></td><td>return the incomplete beta function evluated at x</td></tr>
+		<tr><td><a href='#-qr-quant-math-betaIncompRegularised'>.qr.quant.math.betaIncompRegularised</a></td><td>return the regularised incomplete beta function evluated at </td></tr>
+		<tr><td><a href='#-qr-quant-math-ceil'>.qr.quant.math.ceil</a></td><td>ceil</td></tr>
+		<tr><td><a href='#-qr-quant-math-comb'>.qr.quant.math.comb</a></td><td>return n choose x</td></tr>
+		<tr><td><a href='#-qr-quant-math-cosh'>.qr.quant.math.cosh</a></td><td>return the hyperbolic cos of x</td></tr>
+		<tr><td><a href='#-qr-quant-math-coth'>.qr.quant.math.coth</a></td><td>return the hyperbolic cotan of x</td></tr>
+		<tr><td><a href='#-qr-quant-math-erf'>.qr.quant.math.erf</a></td><td>return the error function of x</td></tr>
+		<tr><td><a href='#-qr-quant-math-erfInv'>.qr.quant.math.erfInv</a></td><td>return the inverse of error function of x</td></tr>
+		<tr><td><a href='#-qr-quant-math-erfc'>.qr.quant.math.erfc</a></td><td>return the compliment of error function of x</td></tr>
+		<tr><td><a href='#-qr-quant-math-erfcInv'>.qr.quant.math.erfcInv</a></td><td>return the inverse of compliment of error function of x</td></tr>
+		<tr><td><a href='#-qr-quant-math-factorial'>.qr.quant.math.factorial</a></td><td>return the factorial of x</td></tr>
+		<tr><td><a href='#-qr-quant-math-floor'>.qr.quant.math.floor</a></td><td>floor</td></tr>
+		<tr><td><a href='#-qr-quant-math-gamma'>.qr.quant.math.gamma</a></td><td>return the gamma function of z using The Lanczos Approximati</td></tr>
+		<tr><td><a href='#-qr-quant-math-gammaIncompH'>.qr.quant.math.gammaIncompH</a></td><td>return the incomplete higher gamma function</td></tr>
+		<tr><td><a href='#-qr-quant-math-gammaIncompL'>.qr.quant.math.gammaIncompL</a></td><td>return the incomplete lower gamma function</td></tr>
+		<tr><td><a href='#-qr-quant-math-gammaIncompRegularisedH'>.qr.quant.math.gammaIncompRegularisedH</a></td><td>return the regularised incomplete higher gamma function</td></tr>
+		<tr><td><a href='#-qr-quant-math-gammaIncompRegularisedL'>.qr.quant.math.gammaIncompRegularisedL</a></td><td>return the regularised incomplete lower gamma function</td></tr>
+		<tr><td><a href='#-qr-quant-math-lanczosCoef'>.qr.quant.math.lanczosCoef</a></td><td>return the lanczos coefficients</td></tr>
+		<tr><td>.qr.quant.math.pi</td><td></td></tr>
+		<tr><td>.qr.quant.math.priv.calcErfInvCoef</td><td></td></tr>
+		<tr><td>.qr.quant.math.priv.logBeta</td><td>private functions</td></tr>
+		<tr><td>.qr.quant.math.priv.logBetaIncomp</td><td></td></tr>
+		<tr><td>.qr.quant.math.priv.logGamma</td><td></td></tr>
+		<tr><td>.qr.quant.math.priv.logGammaIncompL</td><td></td></tr>
+		<tr><td><a href='#-qr-quant-math-sinh'>.qr.quant.math.sinh</a></td><td>return the hyperbolic sin of x</td></tr>
+		<tr><td><a href='#-qr-quant-math-tanh'>.qr.quant.math.tanh</a></td><td>return the hyperbolic tan of x</td></tr>
+</tbody></table></div>
+	<div class='details'>
+	<h2>Entity Details</h2>
+		<div class='entity' id='-qr-quant-math-beta'><h2>.qr.quant.math.beta</h2><p>return the beta function</p><table><tr><th>Parameters: </th><td><ul><li><strong>alpha:</strong> - an real number</li><li><strong>beta:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>beta function evaluated at x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-betaIncomp'><h2>.qr.quant.math.betaIncomp</h2><p>return the incomplete beta function evluated at x</p><table><tr><th>Parameters: </th><td><ul><li><strong>alpha:</strong> - an real number</li><li><strong>beta:</strong> - an real number</li><li><strong>x:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>incomplete beta function evaluated at x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-betaIncompRegularised'><h2>.qr.quant.math.betaIncompRegularised</h2><p>return the regularised incomplete beta function evluated at x</p><table><tr><th>Parameters: </th><td><ul><li><strong>alpha:</strong> - an real number</li><li><strong>beta:</strong> - an real number</li><li><strong>x:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>regularised incomplete beta function evaluated at x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-ceil'><h2>.qr.quant.math.ceil</h2><p>ceil</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - q data type</li></ul></td></tr><tr><th>Return: </th><td>ceil x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-comb'><h2>.qr.quant.math.comb</h2><p>return n choose x</p><table><tr><th>Parameters: </th><td><ul><li><strong>n:</strong> - number of items to chose from</li><li><strong>x:</strong> - number of items to ben chosen</li></ul></td></tr><tr><th>Return: </th><td>the number of combinations</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-cosh'><h2>.qr.quant.math.cosh</h2><p>return the hyperbolic cos of x</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>hyperbolic cos evaluated at x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-coth'><h2>.qr.quant.math.coth</h2><p>return the hyperbolic cotan of x</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>hyperbolic cotan evaluated at x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-erf'><h2>.qr.quant.math.erf</h2><p>return the error function of x</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>error function evaluated at x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-erfInv'><h2>.qr.quant.math.erfInv</h2><p>return the inverse of error function of x</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>inverse of error function evaluated at x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-erfc'><h2>.qr.quant.math.erfc</h2><p>return the compliment of error function of x</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>compliment of error function evaluated at x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-erfcInv'><h2>.qr.quant.math.erfcInv</h2><p>return the inverse of compliment of error function of x</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>inverse of compliment of error function evaluated at x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-factorial'><h2>.qr.quant.math.factorial</h2><p>return the factorial of x</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - an integer</li></ul></td></tr><tr><th>Return: </th><td>factorial evaluated at x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-floor'><h2>.qr.quant.math.floor</h2><p>floor</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - q data type</li></ul></td></tr><tr><th>Return: </th><td>floor x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-gamma'><h2>.qr.quant.math.gamma</h2><p>return the gamma function of z using The Lanczos Approximation</p><table><tr><th>Parameters: </th><td><ul><li><strong>z:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>gamma function evaluated at z</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-gammaIncompH'><h2>.qr.quant.math.gammaIncompH</h2><p>return the incomplete higher gamma function</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - upper bound of the integral</li><li><strong>z:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>value of the incomplete higher gamma function</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-gammaIncompL'><h2>.qr.quant.math.gammaIncompL</h2><p>return the incomplete lower gamma function</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - upper bound of the integral</li><li><strong>z:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>value of the incomplete lower gamma function</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-gammaIncompRegularisedH'><h2>.qr.quant.math.gammaIncompRegularisedH</h2><p>return the regularised incomplete higher gamma function</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - upper bound of the integral</li><li><strong>z:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>value of the regularised incomplete higher gamma function</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-gammaIncompRegularisedL'><h2>.qr.quant.math.gammaIncompRegularisedL</h2><p>return the regularised incomplete lower gamma function</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - upper bound of the integral</li><li><strong>z:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>value of the regularised incomplete lower gamma function</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-lanczosCoef'><h2>.qr.quant.math.lanczosCoef</h2><p>return the lanczos coefficients</p><table><tr><th>Parameters: </th><td><ul><li><strong>n:</strong> - accuracy</li></ul></td></tr><tr><th>Return: </th><td>the lanzcos coef</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-sinh'><h2>.qr.quant.math.sinh</h2><p>return the hyperbolic sin of x</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>hyperbolic sin evaluated at x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-math-tanh'><h2>.qr.quant.math.tanh</h2><p>return the hyperbolic tan of x</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - an real number</li></ul></td></tr><tr><th>Return: </th><td>hyperbolic tan evaluated at x</td></tr></table></div></div>
+</div><div id='footer'> <p>&copy; 2013 <a class='qlogo' href='http://www.timestored.com/qstudio/help/qdoc?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio' target='a'>q<span>Doc</span></a> | <a target='a' href='http://www.timestored.com'>TimeStored.com</a> | <a target='a' href='http://www.timestored.com/kdb-training?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>KDB Training</a> | <a target='a' href='http://www.timestored.com/consulting?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>KDB Consulting</a> | <a target='a' href='http://www.timestored.com/contact?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>Contact Us</a></p></div>
+</div></div>
+</body></html>

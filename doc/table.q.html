@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" ><head><meta http-equiv="content-type" content="text/html; charset=iso-8859-1" /><title>table.q - TimeStored.com</title><link rel="stylesheet" href="qdoc.css" type="text/css" media="screen" /><link rel="shortcut icon" type="image/png" href="http://www.timestored.com/favicon.png" /></head><body>
+<div id='wrap'><div id='page'>
+<div id='header'><h2><a class='qlogo' href='http://www.timestored.com/qstudio/help/qdoc?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio' target='a'>q<span>Doc</span></a> - <a target='a' href='http://www.timestored.com'>TimeStored.com</a></h2></div>
+<div id='main'>
+	<div id='headerDoc'>table.q - contains utility function for table operation</div>
+	<div id='summary'><h2>Entity Summary</h2><table class='overviewSummary'><tbody><tr><th>Entities</th><th>Short Description</th></tr>
+		<tr><td><a href='#-qr-util-tbl-crossTab'>.qr.util.tbl.crossTab</a></td><td>crosstab statics on table</td></tr>
+		<tr><td><a href='#-qr-util-tbl-isKeyedTbl'>.qr.util.tbl.isKeyedTbl</a></td><td>check if input is a keyed tables</td></tr>
+		<tr><td><a href='#-qr-util-tbl-isNonEmptyTbl'>.qr.util.tbl.isNonEmptyTbl</a></td><td>check if input is non-empty tables</td></tr>
+		<tr><td><a href='#-qr-util-tbl-lj'>.qr.util.tbl.lj</a></td><td>Safely left join table on columns specified</td></tr>
+		<tr><td><a href='#-qr-util-tbl-prepends'>.qr.util.tbl.prepends</a></td><td>prepend the column names with prefix</td></tr>
+		<tr><td>.qr.util.tbl.priv.crossSinglePivot</td><td></td></tr>
+		<tr><td><a href='#-qr-util-tbl-splitCol'>.qr.util.tbl.splitCol</a></td><td>split the string column and ungroup</td></tr>
+		<tr><td><a href='#-qr-util-tbl-uj'>.qr.util.tbl.uj</a></td><td>Safely union join table on columns specified</td></tr>
+		<tr><td>qr.util.tbl.priv.symPivotMerge</td><td></td></tr>
+</tbody></table></div>
+	<div class='details'>
+	<h2>Entity Details</h2>
+		<div class='entity' id='-qr-util-tbl-crossTab'><h2>.qr.util.tbl.crossTab</h2><p>crosstab statics on table</p><table><tr><th>Parameters: </th><td><ul><li><strong>b:</strong> - group by columns</li><li><strong>p:</strong> - pivot column, column type must be symbol</li><li><strong>t:</strong> - Q table</li><li><strong>v:</strong> - exposed value v</li></ul></td></tr><tr><th>Return: </th><td>the crosstab *pivot table</td></tr></table></div>
+		<div class='entity' id='-qr-util-tbl-isKeyedTbl'><h2>.qr.util.tbl.isKeyedTbl</h2><p>check if input is a keyed tables</p><table><tr><th>Parameters: </th><td><ul><li><strong>tbl:</strong> - input data. Can be anything</li></ul></td></tr><tr><th>return:: </th><td>return true if input data is keyed table. False otherwise</td></tr></table></div>
+		<div class='entity' id='-qr-util-tbl-isNonEmptyTbl'><h2>.qr.util.tbl.isNonEmptyTbl</h2><p>check if input is non-empty tables</p><table><tr><th>Parameters: </th><td><ul><li><strong>tbl:</strong> - input data. Can be anything</li></ul></td></tr><tr><th>return:: </th><td>return true if input data is not an empty table. False otherwise</td></tr></table></div>
+		<div class='entity' id='-qr-util-tbl-lj'><h2>.qr.util.tbl.lj</h2><p>Safely left join table on columns specified</p><table><tr><th>Parameters: </th><td><ul><li><strong>colsToJoin:</strong> - columns to join both table</li><li><strong>lTabl:</strong> - tables on the left for left join</li><li><strong>rTbl:</strong> - tables on the right for left join</li></ul></td></tr><tr><th>return:: </th><td>a table contains resulted from left joining the lTbl with rTbl</td></tr></table></div>
+		<div class='entity' id='-qr-util-tbl-prepends'><h2>.qr.util.tbl.prepends</h2><p>prepend the column names with prefix</p><table><tr><th>Parameters: </th><td><ul><li><strong>exceptCols:</strong> - exceptional columns which will NOT be appended</li><li><strong>prefix:</strong> - prefix to be appended in front of the column name</li><li><strong>tbl:</strong> - a table</li></ul></td></tr><tr><th>return:: </th><td>the table with column names appended by prefix</td></tr></table></div>
+		<div class='entity' id='-qr-util-tbl-splitCol'><h2>.qr.util.tbl.splitCol</h2><p>split the string column and ungroup</p><table><tr><th>Parameters: </th><td><ul><li><strong>c:</strong> - column to ungroup, in symbol</li><li><strong>t:</strong> - Q table</li></ul></td></tr><tr><th>Return: </th><td>the columns ungroup by c</td></tr></table></div>
+		<div class='entity' id='-qr-util-tbl-uj'><h2>.qr.util.tbl.uj</h2><p>Safely union join table on columns specified</p><table><tr><th>Parameters: </th><td><ul><li><strong>lTabl:</strong> - tables on the left for left join</li><li><strong>rTbl:</strong> - tables on the right for left join</li></ul></td></tr><tr><th>return:: </th><td>a table contains resulted from union joining between two tables</td></tr></table></div></div>
+</div><div id='footer'> <p>&copy; 2013 <a class='qlogo' href='http://www.timestored.com/qstudio/help/qdoc?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio' target='a'>q<span>Doc</span></a> | <a target='a' href='http://www.timestored.com'>TimeStored.com</a> | <a target='a' href='http://www.timestored.com/kdb-training?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>KDB Training</a> | <a target='a' href='http://www.timestored.com/consulting?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>KDB Consulting</a> | <a target='a' href='http://www.timestored.com/contact?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>Contact Us</a></p></div>
+</div></div>
+</body></html>

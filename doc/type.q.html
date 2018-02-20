@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" ><head><meta http-equiv="content-type" content="text/html; charset=iso-8859-1" /><title>type.q - TimeStored.com</title><link rel="stylesheet" href="qdoc.css" type="text/css" media="screen" /><link rel="shortcut icon" type="image/png" href="http://www.timestored.com/favicon.png" /></head><body>
+<div id='wrap'><div id='page'>
+<div id='header'><h2><a class='qlogo' href='http://www.timestored.com/qstudio/help/qdoc?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio' target='a'>q<span>Doc</span></a> - <a target='a' href='http://www.timestored.com'>TimeStored.com</a></h2></div>
+<div id='main'>
+	<div id='headerDoc'>type.q - contains utility function for data types</div>
+	<div id='summary'><h2>Entity Summary</h2><table class='overviewSummary'><tbody><tr><th>Entities</th><th>Short Description</th></tr>
+		<tr><td><a href='#-qr-bitsTo'>.qr.bitsTo</a></td><td>convert bits to other type</td></tr>
+		<tr><td><a href='#-qr-bytesTo'>.qr.bytesTo</a></td><td>convert bytes to other type</td></tr>
+		<tr><td>.qr.initType</td><td>init type</td></tr>
+		<tr><td><a href='#-qr-isFunction'>.qr.isFunction</a></td><td>check if x is a function</td></tr>
+		<tr><td><a href='#-qr-isInteger'>.qr.isInteger</a></td><td>check if x is an integer</td></tr>
+		<tr><td><a href='#-qr-isList'>.qr.isList</a></td><td>check if input is list</td></tr>
+		<tr><td>.qr.listTypes</td><td>list type</td></tr>
+		<tr><td><a href='#-qr-mergeSym'>.qr.mergeSym</a></td><td>merge the symbol</td></tr>
+		<tr><td><a href='#-qr-toBase'>.qr.toBase</a></td><td>convert the base presentation of number to integer</td></tr>
+		<tr><td><a href='#-qr-toBits'>.qr.toBits</a></td><td>convert bits to integer</td></tr>
+		<tr><td><a href='#-qr-toBytes'>.qr.toBytes</a></td><td>convert bytes to integer</td></tr>
+		<tr><td><a href='#-qr-toString'>.qr.toString</a></td><td>convert to string</td></tr>
+		<tr><td><a href='#-qr-toSymbol'>.qr.toSymbol</a></td><td>convert to symbol</td></tr>
+</tbody></table></div>
+	<div class='details'>
+	<h2>Entity Details</h2>
+		<div class='entity' id='-qr-bitsTo'><h2>.qr.bitsTo</h2><p>convert bits to other type</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - type to convert to</li><li><strong>y:</strong> - Q dataType</li></ul></td></tr><tr><th>Return: </th><td>the coverted data</td></tr></table></div>
+		<div class='entity' id='-qr-bytesTo'><h2>.qr.bytesTo</h2><p>convert bytes to other type</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - type to convert to</li><li><strong>y:</strong> - Q dataType</li></ul></td></tr><tr><th>Return: </th><td>the coverted data</td></tr></table></div>
+		<div class='entity' id='-qr-isFunction'><h2>.qr.isFunction</h2><p>check if x is a function</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - q data type</li></ul></td></tr><tr><th>Return: </th><td>true if x is function; false otherwise</td></tr></table></div>
+		<div class='entity' id='-qr-isInteger'><h2>.qr.isInteger</h2><p>check if x is an integer</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - q data type</li></ul></td></tr><tr><th>Return: </th><td>true if x is an integer</td></tr></table></div>
+		<div class='entity' id='-qr-isList'><h2>.qr.isList</h2><p>check if input is list</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - Q data type</li></ul></td></tr><tr><th>Return: </th><td>true if x is a list; false otherwise</td></tr></table></div>
+		<div class='entity' id='-qr-mergeSym'><h2>.qr.mergeSym</h2><p>merge the symbol</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - symbol</li><li><strong>y:</strong> - symbol</li></ul></td></tr><tr><th>Return: </th><td>the symbol got merged</td></tr></table></div>
+		<div class='entity' id='-qr-toBase'><h2>.qr.toBase</h2><p>convert the base presentation of number to integer</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - vector repsenting the bits array</li><li><strong>y:</strong> - base</li></ul></td></tr><tr><th>Return: </th><td>the data converted from base into integer</td></tr></table></div>
+		<div class='entity' id='-qr-toBits'><h2>.qr.toBits</h2><p>convert bits to integer</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - bits array</li></ul></td></tr><tr><th>Return: </th><td>the integer value of x</td></tr></table></div>
+		<div class='entity' id='-qr-toBytes'><h2>.qr.toBytes</h2><p>convert bytes to integer</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - bytes</li></ul></td></tr><tr><th>Return: </th><td>the integer value of x</td></tr></table></div>
+		<div class='entity' id='-qr-toString'><h2>.qr.toString</h2><p>convert to string</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - a Q datatype</li></ul></td></tr><tr><th>Return: </th><td>the string presentation of x</td></tr></table></div>
+		<div class='entity' id='-qr-toSymbol'><h2>.qr.toSymbol</h2><p>convert to symbol</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - a Q datatype</li></ul></td></tr><tr><th>Return: </th><td>the symbol presentation of x</td></tr></table></div></div>
+</div><div id='footer'> <p>&copy; 2013 <a class='qlogo' href='http://www.timestored.com/qstudio/help/qdoc?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio' target='a'>q<span>Doc</span></a> | <a target='a' href='http://www.timestored.com'>TimeStored.com</a> | <a target='a' href='http://www.timestored.com/kdb-training?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>KDB Training</a> | <a target='a' href='http://www.timestored.com/consulting?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>KDB Consulting</a> | <a target='a' href='http://www.timestored.com/contact?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>Contact Us</a></p></div>
+</div></div>
+</body></html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" ><head><meta http-equiv="content-type" content="text/html; charset=iso-8859-1" /><title>stat.q - TimeStored.com</title><link rel="stylesheet" href="qdoc.css" type="text/css" media="screen" /><link rel="shortcut icon" type="image/png" href="http://www.timestored.com/favicon.png" /></head><body>
+<div id='wrap'><div id='page'>
+<div id='header'><h2><a class='qlogo' href='http://www.timestored.com/qstudio/help/qdoc?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio' target='a'>q<span>Doc</span></a> - <a target='a' href='http://www.timestored.com'>TimeStored.com</a></h2></div>
+<div id='main'>
+	<div id='headerDoc'>stat.q - contains basic statistical function</div>
+	<div id='summary'><h2>Entity Summary</h2><table class='overviewSummary'><tbody><tr><th>Entities</th><th>Short Description</th></tr>
+		<tr><td><a href='#-qr-quant-stat-gls'>.qr.quant.stat.gls</a></td><td>compute the gls estimate</td></tr>
+		<tr><td><a href='#-qr-quant-stat-kurt'>.qr.quant.stat.kurt</a></td><td>compute the (excess) kurtosis</td></tr>
+		<tr><td><a href='#-qr-quant-stat-ols'>.qr.quant.stat.ols</a></td><td>compute the ols estimate</td></tr>
+		<tr><td><a href='#-qr-quant-stat-pearsonCor'>.qr.quant.stat.pearsonCor</a></td><td>compute the pearson (linear) correlation</td></tr>
+		<tr><td><a href='#-qr-quant-stat-sampleCov'>.qr.quant.stat.sampleCov</a></td><td>compute the sample covariance</td></tr>
+		<tr><td><a href='#-qr-quant-stat-sampleVar'>.qr.quant.stat.sampleVar</a></td><td>compute the sample variance</td></tr>
+		<tr><td><a href='#-qr-quant-stat-skew'>.qr.quant.stat.skew</a></td><td>compute the skewness</td></tr>
+		<tr><td><a href='#-qr-quant-stat-spearmanCor'>.qr.quant.stat.spearmanCor</a></td><td>compute the spearman (ranked) correlation</td></tr>
+		<tr><td><a href='#-qr-quant-stat-stdErr'>.qr.quant.stat.stdErr</a></td><td>compute the standard error</td></tr>
+</tbody></table></div>
+	<div class='details'>
+	<h2>Entity Details</h2>
+		<div class='entity' id='-qr-quant-stat-gls'><h2>.qr.quant.stat.gls</h2><p>compute the gls estimate</p><table><tr><th>Parameters: </th><td><ul><li><strong>CovM:</strong> - covariance matrix of the error term, dimension: nxn</li><li><strong>X:</strong> - regressors (as matrix), dimensin: kxn</li><li><strong>Y:</strong> - explantory variable, dimension: 1xn</li></ul></td></tr><tr><th>Return: </th><td>the dictionary contains the information of the fit</td></tr></table></div>
+		<div class='entity' id='-qr-quant-stat-kurt'><h2>.qr.quant.stat.kurt</h2><p>compute the (excess) kurtosis</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - numeric vector</li></ul></td></tr><tr><th>Return: </th><td>the kurtosis of x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-stat-ols'><h2>.qr.quant.stat.ols</h2><p>compute the ols estimate</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - regressors (as matrix), dimensin: kxn</li><li><strong>y:</strong> - explantory variable, dimension: 1xn</li></ul></td></tr><tr><th>Return: </th><td>the dictionary contains the information of the fit</td></tr></table></div>
+		<div class='entity' id='-qr-quant-stat-pearsonCor'><h2>.qr.quant.stat.pearsonCor</h2><p>compute the pearson (linear) correlation</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - numeric vector</li><li><strong>y:</strong> - numeric vector</li></ul></td></tr><tr><th>Return: </th><td>the pearson correlation between x and y</td></tr></table></div>
+		<div class='entity' id='-qr-quant-stat-sampleCov'><h2>.qr.quant.stat.sampleCov</h2><p>compute the sample covariance</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - numeric vector</li><li><strong>y:</strong> - numeric vector</li></ul></td></tr><tr><th>Return: </th><td>the sample covariance between x and y</td></tr></table></div>
+		<div class='entity' id='-qr-quant-stat-sampleVar'><h2>.qr.quant.stat.sampleVar</h2><p>compute the sample variance</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - numeric vector</li></ul></td></tr><tr><th>Return: </th><td>the sample variance of x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-stat-skew'><h2>.qr.quant.stat.skew</h2><p>compute the skewness</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - numeric vector</li></ul></td></tr><tr><th>Return: </th><td>the skewness of x</td></tr></table></div>
+		<div class='entity' id='-qr-quant-stat-spearmanCor'><h2>.qr.quant.stat.spearmanCor</h2><p>compute the spearman (ranked) correlation</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - numeric vector</li><li><strong>y:</strong> - numeric vector</li></ul></td></tr><tr><th>Return: </th><td>the spearman correlation between x and y</td></tr></table></div>
+		<div class='entity' id='-qr-quant-stat-stdErr'><h2>.qr.quant.stat.stdErr</h2><p>compute the standard error</p><table><tr><th>Parameters: </th><td><ul><li><strong>x:</strong> - numeric vector</li></ul></td></tr><tr><th>Return: </th><td>the sample variance between x and y</td></tr></table></div></div>
+</div><div id='footer'> <p>&copy; 2013 <a class='qlogo' href='http://www.timestored.com/qstudio/help/qdoc?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio' target='a'>q<span>Doc</span></a> | <a target='a' href='http://www.timestored.com'>TimeStored.com</a> | <a target='a' href='http://www.timestored.com/kdb-training?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>KDB Training</a> | <a target='a' href='http://www.timestored.com/consulting?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>KDB Consulting</a> | <a target='a' href='http://www.timestored.com/contact?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>Contact Us</a></p></div>
+</div></div>
+</body></html>

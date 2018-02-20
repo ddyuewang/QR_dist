@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" ><head><meta http-equiv="content-type" content="text/html; charset=iso-8859-1" /><title>lp.q - TimeStored.com</title><link rel="stylesheet" href="qdoc.css" type="text/css" media="screen" /><link rel="shortcut icon" type="image/png" href="http://www.timestored.com/favicon.png" /></head><body>
+<div id='wrap'><div id='page'>
+<div id='header'><h2><a class='qlogo' href='http://www.timestored.com/qstudio/help/qdoc?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio' target='a'>q<span>Doc</span></a> - <a target='a' href='http://www.timestored.com'>TimeStored.com</a></h2></div>
+<div id='main'>
+	<div id='headerDoc'>lp.q - contains functions for linear programming</div>
+	<div id='summary'><h2>Entity Summary</h2><table class='overviewSummary'><tbody><tr><th>Entities</th><th>Short Description</th></tr>
+		<tr><td>.qr.quant.lp.priv.A_transform</td><td></td></tr>
+		<tr><td>.qr.quant.lp.priv.b_transform</td><td>transform on b, c, and A during pivoting, according to simpl</td></tr>
+		<tr><td>.qr.quant.lp.priv.c_transform</td><td></td></tr>
+		<tr><td>.qr.quant.lp.priv.choosePivot</td><td>choose the pivot always choose the least subscript to avoid </td></tr>
+		<tr><td>.qr.quant.lp.priv.format</td><td>format the lp object into result</td></tr>
+		<tr><td>.qr.quant.lp.priv.pivot</td><td>pivot on row i and column j</td></tr>
+		<tr><td><a href='#-qr-quant-lp-simplex'>.qr.quant.lp.simplex</a></td><td>solve the linear programming problem in simplex method</td></tr>
+		<tr><td><a href='#-qr-quant-lp-solve'>.qr.quant.lp.solve</a></td><td>solve min(max) y'b, s.</td></tr>
+		<tr><td><a href='#-qr-quant-lp-solveMin'>.qr.quant.lp.solveMin</a></td><td>solve min(max) y'b, s.</td></tr>
+</tbody></table></div>
+	<div class='details'>
+	<h2>Entity Details</h2>
+		<div class='entity' id='-qr-quant-lp-simplex'><h2>.qr.quant.lp.simplex</h2><p>solve the linear programming problem in simplex method</p><table><tr><th>Parameters: </th><td><ul><li><strong>lp:</strong> - the linear programming problem in Dictionary</li></ul></td></tr><tr><th>Return: </th><td>the result in a dictionary with optimal solution</td></tr></table></div>
+		<div class='entity' id='-qr-quant-lp-solve'><h2>.qr.quant.lp.solve</h2><p>solve min(max) y'b, s.t. y'A >=(<=) c</p><table><tr><th>Parameters: </th><td><ul><li><strong>A:</strong> - constraint matrix</li><li><strong>b:</strong> - objective function coefficients</li><li><strong>constr:</strong> - constraint vector</li><li><strong>xconstr:</strong> - constraint on variable</li></ul></td></tr><tr><th>Return: </th><td>the result in a dictionary with optimal solution</td></tr><tr><th>dir:: </th><td>objective direction, either `max or `min</td></tr></table></div>
+		<div class='entity' id='-qr-quant-lp-solveMin'><h2>.qr.quant.lp.solveMin</h2><p>solve min(max) y'b, s.t. y'A >=(<=) c</p><table><tr><th>Parameters: </th><td><ul><li><strong>A:</strong> - constraint matrix</li><li><strong>b:</strong> - objective function coefficients</li><li><strong>constr:</strong> - constraint vector</li><li><strong>xconstr:</strong> - constraint on variable</li></ul></td></tr><tr><th>Return: </th><td>the result in a dictionary with optimal solution</td></tr></table></div></div>
+</div><div id='footer'> <p>&copy; 2013 <a class='qlogo' href='http://www.timestored.com/qstudio/help/qdoc?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio' target='a'>q<span>Doc</span></a> | <a target='a' href='http://www.timestored.com'>TimeStored.com</a> | <a target='a' href='http://www.timestored.com/kdb-training?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>KDB Training</a> | <a target='a' href='http://www.timestored.com/consulting?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>KDB Consulting</a> | <a target='a' href='http://www.timestored.com/contact?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>Contact Us</a></p></div>
+</div></div>
+</body></html>

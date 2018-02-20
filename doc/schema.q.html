@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" ><head><meta http-equiv="content-type" content="text/html; charset=iso-8859-1" /><title>schema.q - TimeStored.com</title><link rel="stylesheet" href="qdoc.css" type="text/css" media="screen" /><link rel="shortcut icon" type="image/png" href="http://www.timestored.com/favicon.png" /></head><body>
+<div id='wrap'><div id='page'>
+<div id='header'><h2><a class='qlogo' href='http://www.timestored.com/qstudio/help/qdoc?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio' target='a'>q<span>Doc</span></a> - <a target='a' href='http://www.timestored.com'>TimeStored.com</a></h2></div>
+<div id='main'>
+	<div id='headerDoc'>schema.q - contains Util functions to construct table schema</div>
+	<div id='summary'><h2>Entity Summary</h2><table class='overviewSummary'><tbody><tr><th>Entities</th><th>Short Description</th></tr>
+		<tr><td><a href='#-qr-util-schema-addCol'>.qr.util.schema.addCol</a></td><td>construct the schema entry given the colName and type</td></tr>
+		<tr><td><a href='#-qr-util-schema-addTbl'>.qr.util.schema.addTbl</a></td><td>register the schema with table name</td></tr>
+		<tr><td><a href='#-qr-util-schema-formatTbl'>.qr.util.schema.formatTbl</a></td><td>format the table given registered schema</td></tr>
+		<tr><td><a href='#-qr-util-schema-getEmptyTbl'>.qr.util.schema.getEmptyTbl</a></td><td>return the empty table given registered schema</td></tr>
+		<tr><td><a href='#-qr-util-schema-getSchemaCodes'>.qr.util.schema.getSchemaCodes</a></td><td>return the codes to construct the corresponding schema given</td></tr>
+		<tr><td>.qr.util.schema.init</td><td>init schema</td></tr>
+		<tr><td>.qr.util.schema.priv.getSchema</td><td></td></tr>
+</tbody></table></div>
+	<div class='details'>
+	<h2>Entity Details</h2>
+		<div class='entity' id='-qr-util-schema-addCol'><h2>.qr.util.schema.addCol</h2><p>construct the schema entry given the colName and type</p><table><tr><th>Parameters: </th><td><ul><li><strong>colNameIn:</strong> - the name of column</li><li><strong>typeNameIn:</strong> - must be Q datatype, with suffix "s" to indicate as list</li></ul></td></tr><tr><th>Return: </th><td>the schema entry</td></tr></table></div>
+		<div class='entity' id='-qr-util-schema-addTbl'><h2>.qr.util.schema.addTbl</h2><p>register the schema with table name</p><table><tr><th>param:: </th><td><ul><li><strong>schemaIn,</strong> - schema to register, constructed by .qr.util.schema.addCol</li><li><strong>tablNameIn,</strong> - the name of the schema</li></ul></td></tr></table></div>
+		<div class='entity' id='-qr-util-schema-formatTbl'><h2>.qr.util.schema.formatTbl</h2><p>format the table given registered schema</p><table><tr><th>Parameters: </th><td><ul><li><strong>tbl:</strong> - a Q table</li><li><strong>tblNameIn:</strong> - the name of the schema</li></ul></td></tr><tr><th>Return: </th><td>the table formated by Q schema, with column types automatially promoted</td></tr></table></div>
+		<div class='entity' id='-qr-util-schema-getEmptyTbl'><h2>.qr.util.schema.getEmptyTbl</h2><p>return the empty table given registered schema</p><table><tr><th>Parameters: </th><td><ul><li><strong>tblNameIn:</strong> - the name of the schema</li></ul></td></tr><tr><th>Return: </th><td>the corresponding empty table with meta</td></tr></table></div>
+		<div class='entity' id='-qr-util-schema-getSchemaCodes'><h2>.qr.util.schema.getSchemaCodes</h2><p>return the codes to construct the corresponding schema given table</p><table><tr><th>Parameters: </th><td><ul><li><strong>tbl:</strong> - a Q table</li></ul></td></tr><tr><th>Return: </th><td>the schema codes matching the meta of tbl</td></tr></table></div></div>
+</div><div id='footer'> <p>&copy; 2013 <a class='qlogo' href='http://www.timestored.com/qstudio/help/qdoc?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio' target='a'>q<span>Doc</span></a> | <a target='a' href='http://www.timestored.com'>TimeStored.com</a> | <a target='a' href='http://www.timestored.com/kdb-training?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>KDB Training</a> | <a target='a' href='http://www.timestored.com/consulting?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>KDB Consulting</a> | <a target='a' href='http://www.timestored.com/contact?utm_source=qstudio&utm_medium=app&utm_campaign=qstudio'>Contact Us</a></p></div>
+</div></div>
+</body></html>
