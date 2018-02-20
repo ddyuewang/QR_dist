@@ -11,3 +11,5 @@ This projects uses the following open source libraries. My sincere thanks for th
 QML:https://github.com/zholos/qml </br>
 log4q:https://github.com/prodrive11/log4q </br>
 q2c:https://github.com/quintanar401/q2c </br>
+
+Full documentation in doc/index.html
